@@ -1,0 +1,38 @@
+{
+  "name": "graduate-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ignore './logs/' --exec npx babel-node src/www.js",
+    "build": "babel -d dist src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-proposal-decorators": "^7.17.2",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "axios": "^0.26.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "babel-plugin-wildcard": "^7.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "passport": "^0.5.3",
+    "passport-jwt": "^4.0.0",
+    "socket.io": "^4.5.1",
+    "socketio-jwt-auth": "^0.2.1"
+  }
+}
